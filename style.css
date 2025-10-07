@@ -1,0 +1,109 @@
+
+
+/*reset básico*/
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/*Traz um layout para tudo que está dentro do body*/
+body{
+    background: #ff8438;
+    background: linear-gradient(90deg,rgba(255, 132, 56, 1) 40%, rgba(237, 139, 69, 1) 8 );
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Foi mudado o layout da calculadora*/
+.calculadora{
+    background-color: rgb(224, 110, 33);
+    padding: 25px;
+    border-radius: 20px;
+    width: 320px;
+    box-shadow: 0px 0px 7px 3px #fa7a01; /*Sombra da calculadora*/
+    display: flex;  /*Ativa o flex*/
+    flex-direction: column;  /*Muda a direção do flex*/
+    gap: 20px;
+}
+
+/*Muda o layout da tela*/
+#tela{
+    width: 100%;
+    height: 60px;
+    font-size: 28px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffaa75;
+    color: black;
+    text-align: right;
+    box-shadow: inset 0px 0px 1px 3px #fa7a01; /*inset dá profundidade*/
+}
+
+/*Muda o layout dos botões*/
+.botoes{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/*Muda o espaçamento entre os itens da linha*/
+.linha-botoes{
+    display: flex;
+    gap: 15px;
+}
+
+/*Muda os botões*/
+button{
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 12px;
+    background-color: #ffa871;
+    color: brown;
+    box-shadow:  0px 0px 1px 3px #fa7901c7;
+    cursor: pointer; /*Muda o tipo do cursor no elemento*/
+    transition: all 0.2s ease; /*Cria transição*/
+    flex:1;  /*Ele se adapta ao tamanho do display*/
+}
+
+/*Transforma o botão quando o mouse está em cima dele*/
+button:hover{
+    background-color:#ff8d46;
+    transform: translateY(-2px); /*Desloca a posição do botão */
+}
+
+/*Aumenta o botão quando clicado*/
+button:active{
+    transform: scale(0.97);  /*Muda o tamanho do botão quando é clicado*/
+}
+
+/*Muda o layout dos botões*/
+.operador{
+    background-color: brown;
+    color: #ff8438;
+}
+/*Muda o layout dos botões quando o mouse estiver em cima*/
+.operador:hover{
+    background-color: rgb(151, 32, 32);
+}
+
+/*Muda o layout dos botões*/
+.botao-limpar{
+    background-color: #633535;
+}
+
+/*Muda o layout dos botões quando o mouse estiver em cima*/
+.botao-limpar:hover{
+    background-color: #502d2d;
+}
+
+
+/*Aumenta o tamanho da ocupação do zero*/
+.botao-zero{
+    flex: 2;
+}
