@@ -17,39 +17,43 @@
         <div class="botoes">
             <!--Primeira linha de botões-->
             <div class="linha-botoes">
-                <button class="botao-limpar">C</button>
-                <button class="operador">/</button>
-                <button class="operador">*</button>
-                <button class="delete">Del</button>
+                <button class="botao-limpar" onclick="limpar()">C</button>
+                <button class="operador" onclick="adicionarValor('/')">/</button>
+                <button class="operador" onclick="adicionarValor('*')">*</button>
+                <button class="delete" onclick="del()">Del</button>
             </div>
             <!--Segunda linha de botões-->
             <div class="linha-botoes">
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button class="operador">-</button>
+                <button onclick="adicionarValor('7')">7</button>
+                <button onclick="adicionarValor('8')">8</button>
+                <button onclick="adicionarValor('9')">9</button>
+                <button class="operador" onclick="adicionarValor('-')">-</button>
             </div>
             <!--Terceira linha de botões-->
             <div class="linha-botoes">
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button class="operador">+</button>
+                <button onclick="adicionarValor('4')">4</button>
+                <button onclick="adicionarValor('5')">5</button>
+                <button onclick="adicionarValor('6')">6</button>
+                <button class="operador" onclick="adicionarValor('+')">+</button>
             </div>
             <!--Quarta linha de botões-->
             <div class="linha-botoes">
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button class="botao-igual">=</button>
+                <button onclick="adicionarValor('1')">1</button>
+                <button onclick="adicionarValor('2')">2</button>
+                <button onclick="adicionarValor('3')">3</button>
+                <button class="botao-igual" onclick="resultado()">=</button>
             </div>
             <!--Última linha-->
             <div class="linha-botoes">
-                <button class="botao-zero">0</button>
-                <button>.</button>
+                <button class="botao-zero" onclick="adicionarValor('0')">0</button>
+                <button onclick="adicionarValor('.')">.</button>
             </div>
         </div>
     </div>
+
+    <script src="main.js">
+
+    </script>
 </body>
 
 </html>
